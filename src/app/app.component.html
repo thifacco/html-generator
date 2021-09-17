@@ -1,0 +1,5 @@
+<h1 class="display-6 mb-3">HTML Generator</h1>
+
+<textarea cols="70" rows="20" [(ngModel)]="contentHtml"></textarea>
+
+<div class="mt-3" [innerHTML]="contentHtml | safeHtml"></div>
