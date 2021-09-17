@@ -1,5 +1,8 @@
-<h1 class="display-6 mb-3">HTML Generator</h1>
+<div class="container mt-3" mb-3>
+  <h1 class="display-6 mb-3">HTML Generator</h1>
+  <p>Write some HTML in the text area, see it rendered below:</p>
 
-<textarea cols="70" rows="20" [(ngModel)]="contentHtml"></textarea>
+  <textarea class="w-100" rows="20" [(ngModel)]="contentHtml"></textarea>
 
-<div class="mt-3" [innerHTML]="contentHtml | safeHtml"></div>
+  <div class="mt-3" [innerHTML]="contentHtml | safeHtml"></div>
+</div>
